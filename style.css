@@ -56,3 +56,11 @@ body {
     font-size: 1.2rem;
     margin-top: 25px;
 }
+
+a {
+    color: #fff;
+}
+
+footer {
+    margin-top: 200px;
+}

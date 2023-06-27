@@ -1,9 +1,13 @@
 const nameInput = document.getElementById('name');
 const passwordInput = document.getElementById('password');
 const btn = document.getElementById('button');
-const container = document.querySelector('.container');
+const forms = document.querySelector('.forms');
 const para = document.createElement('p');
-para.classList.add('para')
+para.classList.add('para');
+const year = document.getElementById('year');
+
+
+
 
 btn.addEventListener('mouseover', (button) => {
     let name = nameInput.value;
@@ -18,7 +22,7 @@ btn.addEventListener('mouseover', (button) => {
         btn.addEventListener('click', () => {
             
             para.innerText = 'Done!!';
-            container.append(para);
+            forms.append(para);
         })
     }
 
@@ -37,3 +41,6 @@ function move() {
         flag = 1;
     }
 }
+
+const newYear = (new Date()).getFullYear();
+year.innerText = newYear;
